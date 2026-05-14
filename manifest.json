@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "RealPrint",
+  "version": "1.0.0",
+  "description": "Profile-based browser fingerprint privacy extension",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "core/profile.js",
+        "inject.js",
+        "modules/webgl.js",
+        "modules/canvas.js",
+        "modules/timezone.js",
+        "modules/plugins.js",
+        "modules/fonts.js",
+        "modules/permissions.js",
+        "modules/webrtc.js",
+        "modules/audio.js",
+        "modules/clientrects.js",
+        "modules/connection.js",
+        "modules/media_devices.js",
+        "modules/battery.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "RealPrint"
+  }
+}

@@ -1,0 +1,41 @@
+window.RealPrintProfile = {
+  id: "win10_chrome_142",
+
+  userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+
+  platform: "Win32",
+
+  languages: ["de-DE", "de", "en-US"],
+
+  timezone: "Europe/Berlin",
+
+  screen: {
+    width: 1920,
+    height: 1080,
+    availWidth: 1920,
+    availHeight: 1040,
+    colorDepth: 24,
+    pixelDepth: 24,
+    devicePixelRatio: 1
+  },
+
+  hardware: {
+    hardwareConcurrency: 8,
+    deviceMemory: 8,
+    maxTouchPoints: 0
+  },
+
+  webgl: {
+    vendor: "Google Inc.",
+    renderer: "ANGLE (Intel, Intel(R) UHD Graphics 620 Direct3D11 vs_5_0 ps_5_0)"
+  },
+
+  permissions: {
+    notifications: "default",
+    geolocation: "prompt",
+    camera: "prompt",
+    microphone: "prompt"
+  },
+
+  seed: 777
+};
